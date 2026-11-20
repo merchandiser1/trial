@@ -1,0 +1,305 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8f6f0;
+  color: #171512;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  height: 80px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e8e3d8;
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+.logo span {
+  color: #a58a5a;
+}
+
+.nav-text, .eyebrow, .note, footer {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #8b806e;
+}
+
+.container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 65px 25px;
+}
+
+.product-section {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.product-image {
+  position: relative;
+  background: #eee9df;
+}
+
+.product-image img {
+  display: block;
+  width: 100%;
+  max-height: 650px;
+  object-fit: cover;
+}
+
+.product-tag {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background: #f8f6f0;
+  padding: 12px 16px;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.product-details h1,
+.section-heading h2,
+.result-section h2 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.price {
+  font-size: 19px;
+  margin: 18px 0;
+}
+
+.description {
+  color: #777064;
+  line-height: 1.8;
+  max-width: 370px;
+  font-size: 14px;
+}
+
+.try-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #171512;
+  color: white;
+  border: 1px solid #171512;
+  padding: 17px 27px;
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.try-button:hover {
+  background: #a58a5a;
+  border-color: #a58a5a;
+}
+
+.try-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.product-details .try-button {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.note {
+  margin-top: 15px;
+  letter-spacing: 0.5px;
+}
+
+.tryon-section {
+  margin-top: 110px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading h2,
+.result-section h2 {
+  margin: 12px 0;
+}
+
+.section-heading > p:last-child {
+  color: #777064;
+  font-size: 14px;
+}
+
+.tryon-card {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 40px;
+  background: #fff;
+  padding: 35px;
+}
+
+.upload-area {
+  min-height: 430px;
+  background: #f8f6f0;
+  border: 1px dashed #c9bda8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+
+.upload-icon {
+  font-size: 38px;
+  color: #a58a5a;
+  margin-bottom: 15px;
+}
+
+.upload-area h3,
+.action-area h3 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.upload-area p {
+  color: #8b806e;
+  font-size: 12px;
+  margin-bottom: 22px;
+}
+
+.outline-button {
+  background: transparent;
+  color: #171512;
+  border: 1px solid #b8aa93;
+  padding: 14px 22px;
+  cursor: pointer;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+.preview {
+  width: 100%;
+  height: 430px;
+  object-fit: contain;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.action-area {
+  text-align: center;
+  align-self: center;
+}
+
+.selected-product {
+  width: 145px;
+  height: 190px;
+  object-fit: cover;
+  margin: 20px auto;
+  display: block;
+}
+
+.action-area .try-button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.status {
+  color: #8b806e;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+.result-section {
+  text-align: center;
+  margin: 100px auto 20px;
+}
+
+.result-section > img {
+  display: block;
+  max-width: 100%;
+  max-height: 650px;
+  object-fit: contain;
+  margin: 30px auto;
+}
+
+.result-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+footer {
+  text-align: center;
+  padding: 35px 10px;
+  border-top: 1px solid #e8e3d8;
+}
+
+@media(max-width: 768px) {
+  .navbar {
+    height: 65px;
+    padding: 0 20px;
+  }
+
+  .logo {
+    font-size: 23px;
+  }
+
+  .nav-text {
+    font-size: 8px;
+  }
+
+  .container {
+    padding: 35px 18px;
+  }
+
+  .product-section,
+  .tryon-card {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .product-image img {
+    max-height: 500px;
+  }
+
+  .tryon-section {
+    margin-top: 75px;
+  }
+
+  .tryon-card {
+    padding: 18px;
+  }
+
+  .upload-area {
+    min-height: 350px;
+  }
+
+  .preview {
+    height: 350px;
+  }
+}

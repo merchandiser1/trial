@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saahra | Virtual Try-On</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">SAAHRA<span>.</span></div>
+    <div class="nav-text">THE ART OF ELEGANCE</div>
+  </nav>
+
+  <main class="container">
+
+    <section class="product-section">
+      <div class="product-image">
+        <img src="product-dress.jpg" alt="Saahra Ivory Dress">
+        <span class="product-tag">EXCLUSIVE COLLECTION</span>
+      </div>
+
+      <div class="product-details">
+        <p class="eyebrow">SA AHRA COLLECTION</p>
+        <h1>Ivory Embroidered<br>Luxury Dress</h1>
+        <p class="price">₹24,999</p>
+
+        <p class="description">
+          A timeless statement piece crafted with elegant
+          embroidery and premium detailing.
+        </p>
+
+        <button class="try-button" id="openTryOn">
+          <span>✧</span> TRY IT ON
+        </button>
+
+        <p class="note">See how this look appears on you.</p>
+      </div>
+    </section>
+
+    <section class="tryon-section" id="tryonSection">
+      <div class="section-heading">
+        <p class="eyebrow">YOUR PERSONAL FITTING ROOM</p>
+        <h2>Experience the look.</h2>
+        <p>Upload a full-body photo to see yourself in this outfit.</p>
+      </div>
+
+      <div class="tryon-card">
+
+        <div class="upload-area" id="uploadArea">
+          <input type="file" id="personImage" accept="image/jpeg,image/png,image/webp" hidden>
+
+          <div id="uploadPlaceholder">
+            <div class="upload-icon">＋</div>
+            <h3>Upload your photo</h3>
+            <p>Choose a clear, front-facing full-body photo.</p>
+            <button class="outline-button" id="choosePhoto" type="button">
+              CHOOSE PHOTO
+            </button>
+          </div>
+
+          <img id="personPreview" class="preview hidden" alt="Your uploaded photo">
+        </div>
+
+        <div class="action-area">
+          <p class="eyebrow">YOUR SELECTED OUTFIT</p>
+          <img class="selected-product" src="product-dress.jpg" alt="Selected dress">
+          <h3>Ivory Embroidered Dress</h3>
+          <p class="price">₹24,999</p>
+
+          <button class="try-button" id="generateBtn" disabled>
+            GENERATE MY LOOK
+          </button>
+          <p class="status" id="status"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="result-section hidden" id="resultSection">
+      <p class="eyebrow">YOUR VIRTUAL LOOK</p>
+      <h2>Made for you.</h2>
+      <img id="resultImage" alt="Your virtual try-on result">
+
+      <div class="result-actions">
+        <a id="downloadBtn" class="try-button" download="saahra-tryon.png">
+          DOWNLOAD IMAGE
+        </a>
+        <button class="outline-button" id="tryAgain">
+          TRY AGAIN
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>© 2026 SAAHRA · ELEGANCE IN EVERY DETAIL</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
